@@ -15,5 +15,6 @@ func main() {
 	// TestMaxProfit()
 	// TestMaxProfit2()
 	// TestJumpGame()
-	TestJumpGame2()
+	// TestJumpGame2()
+	TestHIndex()
 }
