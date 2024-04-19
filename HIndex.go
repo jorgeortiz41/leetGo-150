@@ -95,12 +95,12 @@ func quickSort(nums []int) []int {
 
 // GenerateRandomInput generates a random slice of integers for testing hIndex function
 func GenerateRandomInput(size int) []int {
-    rand.Seed(time.Now().UnixNano()) // Seed the random number generator with current time
-    citations := make([]int, size)
-    for i := range citations {
-        citations[i] = rand.Intn(size) // Generate random integers between 0 and size
-    }
-    return citations
+	rand.New(rand.NewSource(time.Now().UnixNano())) // Seed the random number generator with current time
+	citations := make([]int, size)
+	for i := range citations {
+		citations[i] = rand.Intn(size) // Generate random integers between 0 and size
+	}
+	return citations
 }
 
 func TestHIndex() {
