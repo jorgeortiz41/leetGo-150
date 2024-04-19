@@ -20,7 +20,7 @@ func hIndex(citations []int) int {
 	hits := 0
 	i := 0
 
-	for true {
+	for {
 		// fmt.Println("hIndex:", hIndex, "i:", i, "hits:", hits, "value:", citations[i])
 		if hIndex == 0 {
 			return 0
@@ -51,8 +51,6 @@ func hIndex(citations []int) int {
 			hIndex--
 		}
 	}
-
-	return hIndex
 }
 
 func hIndex2(citations []int) int {
