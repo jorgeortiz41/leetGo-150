@@ -23,19 +23,19 @@ type RandomizedSet struct {
 }
 
 func Constructor() RandomizedSet {
-
+	return RandomizedSet{}
 }
 
 func (this *RandomizedSet) Insert(val int) bool {
-
+	return true
 }
 
 func (this *RandomizedSet) Remove(val int) bool {
-
+	return true
 }
 
 func (this *RandomizedSet) GetRandom() int {
-
+	return 0
 }
 
 func TestRandomizedSet() {
