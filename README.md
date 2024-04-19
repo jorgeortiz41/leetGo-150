@@ -14,10 +14,10 @@ Problems marked with \* means i solved it with help of ChatGPT and still need fu
 - [x] 122. [Best Time to Buy and Sell Stock II](/maxProfit2.go)\*
 - [x] 55. [Jump Game](/jumpGame.go)\*
 - [x] 45. [Jump Game II](/jumpGame2.go)\*
-- [x] 274. H-Index
+- [x] 274. [H-Index](/hIndex.go)
   - Tested 2 solutions and experimented with goroutines for the tests to measure time.
   - On average hIndex() is 24x faster than hIndex2() for **larger inputs**.
-- [ ] 380. Insert Delete GetRandom O(1)
+- [ ] 380. [Insert Delete GetRandom O(1)](/randomizedSet.go)
 - [ ] 238. Product of Array Except Self
 - [ ] 134. Gas Station
 - [ ] 135. Candy
