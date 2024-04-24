@@ -23,3 +23,12 @@ Problems marked with \* means i solved it with help of ChatGPT and still need fu
 - [x] 238. [Product of Array Except Self](/productExceptSelf.go)\*
 - [x] 134. [Gas Station](/canCompleteCircuit.go)
 - [ ] 135. Candy
+- [ ] 42. Trapping Rain Water
+- [ ] 13. Roman to Integer
+- [ ] 12. Integer to Roman
+- [ ] 58. Length of Last Word
+- [ ] 14. Longest Common Prefix
+- [ ] 151. Reverse Words in a String
+- [ ] 6. ZigZag Conversion
+- [ ] 28. Implement strStr()
+- [ ] 68. Text Justification
