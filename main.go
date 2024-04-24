@@ -18,5 +18,7 @@ func main() {
 	// TestJumpGame2()
 	// TestMajorityElement()
 	// TestHIndex()
-	TestRandomizedSet()
+	// TestRandomizedSet()
+	// TestProductExceptSelf()
+	TestCanCompleteCircuit()
 }

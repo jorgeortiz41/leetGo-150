@@ -20,6 +20,6 @@ Problems marked with \* means i solved it with help of ChatGPT and still need fu
 - [x] 380. [Insert Delete GetRandom O(1)](/randomizedSet.go)\*\*
   - Technically works, in leetcode it says wrong answer on an input with hundreds of getRandom() calls.
   - The numbers are shown randomly and are not incorrect. Leetcode doesnt say why its wrong
-- [ ] 238. Product of Array Except Self
-- [ ] 134. Gas Station
+- [x] 238. [Product of Array Except Self](/productExceptSelf.go)\*
+- [x] 134. [Gas Station](/canCompleteCircuit.go)
 - [ ] 135. Candy
