@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 // 380. Insert Delete GetRandom O(1) (Medium) https://leetcode.com/problems/insert-delete-getrandom-o1/
 // Implement the RandomizedSet class:
@@ -19,32 +23,78 @@ import "fmt"
  * param_3 := obj.GetRandom();
  */
 
+// TODO: Create keys slice to track keys then choose a random one for getRandom
 type RandomizedSet struct {
-}
+	set  map[int]int
+	keys []int
+	rand *rand.Rand
+} // map[int]struct{} is a set
 
 func Constructor() RandomizedSet {
-	return RandomizedSet{}
+	return RandomizedSet{set: make(map[int]int), keys: []int{}, rand: rand.New(rand.NewSource(time.Now().UnixNano()))}
 }
 
 func (this *RandomizedSet) Insert(val int) bool {
+	_, ok := this.set[val]
+	if ok {
+		return false
+	}
+	this.keys = append(this.keys, val)
+	this.set[val] = len(this.keys) - 1
+
 	return true
 }
 
 func (this *RandomizedSet) Remove(val int) bool {
-	return true
+	_, ok := this.set[val]
+	if ok {
+		if this.set[val] == len(this.keys)-1 {
+			this.keys = this.keys[:len(this.keys)-1]
+			delete(this.set, val)
+			return true
+		}
+		lastVal := this.keys[len(this.keys)-1]
+		this.keys[this.set[val]] = lastVal
+		this.keys = append(this.keys[:len(this.keys)-1], this.keys[len(this.keys)-1:]...)
+		this.set[lastVal] = this.set[val]
+		delete(this.set, val)
+		return true
+	}
+	return false
 }
 
 func (this *RandomizedSet) GetRandom() int {
-	return 0
+	if len(this.keys) == 0 {
+		return 0
+	}
+	randomIdx := this.rand.Intn(len(this.keys))
+	return this.keys[randomIdx]
 }
 
 func TestRandomizedSet() {
 	fmt.Println("Running RandomizedSet tests")
 	obj := Constructor()
-	fmt.Println("Insert 1:", obj.Insert(1))
-	fmt.Println("Insert 2:", obj.Insert(2))
-	fmt.Println("Insert 3:", obj.Insert(3))
-	fmt.Println("Remove 2:", obj.Remove(2))
+	fmt.Println("RandomizedSet: ", obj.set, "keys:", obj.keys)
+	fmt.Println("Insert 1:", obj.Insert(1), "Expected: ", "true")
+	fmt.Println("RandomizedSet: ", obj)
+	fmt.Println("Insert 1:", obj.Insert(1), "Expected: ", "false")
+
+	fmt.Println("Remove 2:", obj.Remove(2), "Expected: ", "false")
+
+	fmt.Println("Insert 2:", obj.Insert(2), "Expected: ", "true")
+	fmt.Println("RandomizedSet: ", obj)
+
+	fmt.Println("Remove 2:", obj.Remove(2), "Expected: ", "true")
+	fmt.Println("RandomizedSet: ", obj)
+
+	fmt.Println("Insert 3:", obj.Insert(3), "Expected: ", "true")
+	fmt.Println("Insert -1:", obj.Insert(-1), "Expected: ", "true")
+	fmt.Println("RandomizedSet: ", obj)
+
 	fmt.Println("GetRandom:", obj.GetRandom())
 	fmt.Println("GetRandom:", obj.GetRandom())
+	fmt.Println("GetRandom:", obj.GetRandom())
+	fmt.Println("GetRandom:", obj.GetRandom())
+	fmt.Println("GetRandom:", obj.GetRandom())
+	fmt.Println("Expected: ", "1, 3, or -1")
 }
