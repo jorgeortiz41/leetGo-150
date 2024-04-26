@@ -17,7 +17,7 @@ Problems marked with \* means i solved it with help of ChatGPT and still need fu
 - [x] 274. [H-Index](/hIndex.go)
   - Tested 2 solutions and experimented with goroutines for the tests to measure time.
   - On average hIndex() is 24x faster than hIndex2() for **larger inputs**.
-- [x] 380. [Insert Delete GetRandom O(1)](/randomizedSet.go)\*\*
+- [-] 380.(In-Progress) [Insert Delete GetRandom O(1)](/randomizedSet.go)\*\*
   - Technically works, in leetcode it says wrong answer on an input with hundreds of getRandom() calls.
   - The numbers are shown randomly and are not incorrect. Leetcode doesnt say why its wrong
 - [x] 238. [Product of Array Except Self](/productExceptSelf.go)\*
