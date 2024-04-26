@@ -20,5 +20,6 @@ func main() {
 	// TestHIndex()
 	// TestRandomizedSet()
 	// TestProductExceptSelf()
-	TestCanCompleteCircuit()
+	// TestCanCompleteCircuit()
+	TestCandy()
 }

@@ -1,6 +1,6 @@
 # Leetcode 150 Problem List solutions with Golang
 
-## This is only for practice (currently learning Go)
+## This is only for practice (currently learning Go) without the help of Github Copilot or ChatGPT
 
 Problems marked with \* means i solved it with help of ChatGPT and still need further understanding.
 
@@ -22,7 +22,8 @@ Problems marked with \* means i solved it with help of ChatGPT and still need fu
   - The numbers are shown randomly and are not incorrect. Leetcode doesnt say why its wrong
 - [x] 238. [Product of Array Except Self](/productExceptSelf.go)\*
 - [x] 134. [Gas Station](/canCompleteCircuit.go)
-- [ ] 135. Candy
+- [x] 135. Candy
+  - Took me the whole day but i finally got it 😅
 - [ ] 42. Trapping Rain Water
 - [ ] 13. Roman to Integer
 - [ ] 12. Integer to Roman
