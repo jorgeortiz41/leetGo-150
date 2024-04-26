@@ -22,7 +22,7 @@ Problems marked with \* means i solved it with help of ChatGPT and still need fu
   - The numbers are shown randomly and are not incorrect. Leetcode doesnt say why its wrong
 - [x] 238. [Product of Array Except Self](/productExceptSelf.go)\*
 - [x] 134. [Gas Station](/canCompleteCircuit.go)
-- [x] 135. Candy
+- [x] 135. [Candy](/candy.go)
   - Took me the whole day but i finally got it 😅
 - [ ] 42. Trapping Rain Water
 - [ ] 13. Roman to Integer
