@@ -21,5 +21,6 @@ func main() {
 	// TestRandomizedSet()
 	// TestProductExceptSelf()
 	// TestCanCompleteCircuit()
-	TestCandy()
+	// TestCandy()
+	TestTrap()
 }
