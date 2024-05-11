@@ -22,5 +22,6 @@ func main() {
 	// TestProductExceptSelf()
 	// TestCanCompleteCircuit()
 	// TestCandy()
-	TestTrap()
+	// TestTrap()			(NOT DONE!!!!)
+	TestRomanToInt()
 }

@@ -29,7 +29,6 @@ func trap(height []int) int {
 		j := i + 1
 		peak := height[i]
 		toFill := 0
-		// fmt.Println("i: ", i)
 		for search {
 			if j == len(height)-1 && height[j] < peak {
 				break
@@ -39,42 +38,32 @@ func trap(height []int) int {
 				j++
 			}
 			if height[j] >= peak {
-				// fmt.Println("toFill: ", toFill)
 				if toFill > 0 {
 					lastPeak = j
+					fmt.Println("leftpeak: ", i, "rightpeak : ", j, "filled: ", toFill)
 				}
 				water += toFill
 				i = j - 1
 				break
 			}
 		}
-		// fmt.Println("lastPeak(r-l): ", lastPeak)
 	}
-	fmt.Println("lastPeak(before l-r): ", lastPeak)
+
 	if lastPeak < len(height)-1 {
-		for i := len(height) - 1; i > lastPeak; i-- {
-			search = true
-			j := i - 1
-			peak := height[i]
-			toFill := 0
-
-			for search {
-				if j == lastPeak && height[j] < peak {
-					break
+		for i := lastPeak + 1; i < len(height)-1; i++ {
+			if height[i] < height[i-1] && height[i] < height[i+1] {
+				if height[i-1] < height[i+1] {
+					water += height[i-1] - height[i]
+				} else if height[i-1] > height[i+1] {
+					water += height[i+1] - height[i]
+				} else {
+					water += height[i-1] - height[i]
 				}
-				if height[j] < peak {
-					toFill += peak - height[j]
-					j--
-				}
-				if height[j] >= peak {
-					water += toFill
-					i = j + 1
-					break
-				}
-
 			}
 		}
 	}
+
+	fmt.Println("lastPeak: ", lastPeak)
 	return water
 }
 
