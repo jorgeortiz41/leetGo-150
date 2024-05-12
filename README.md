@@ -25,7 +25,7 @@ Problems marked with \* means i solved it with help of ChatGPT and still need fu
 - [x] 135. [Candy](/candy.go)
   - Took me the whole day but i finally got it 😅
 - [ ] 42. (In-Progress) [Trapping Rain Water](/trap.go)
-- [ ] 13. Roman to Integer
+- [x] 13. [Roman to Integer](/romanToInt.go)
 - [ ] 12. Integer to Roman
 - [ ] 58. Length of Last Word
 - [ ] 14. Longest Common Prefix

@@ -23,5 +23,6 @@ func main() {
 	// TestCanCompleteCircuit()
 	// TestCandy()
 	// TestTrap()			(NOT DONE!!!!)
-	TestRomanToInt()
+	// TestRomanToInt()
+	TestIntToRoman()
 }
