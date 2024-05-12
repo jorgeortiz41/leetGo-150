@@ -26,7 +26,7 @@ Problems marked with \* means i solved it with help of ChatGPT and still need fu
   - Took me the whole day but i finally got it 😅
 - [ ] 42. (In-Progress) [Trapping Rain Water](/trap.go)
 - [x] 13. [Roman to Integer](/romanToInt.go)
-- [ ] 12. Integer to Roman
+- [x] 12. [Integer to Roman](/intToRoman.go)
 - [ ] 58. Length of Last Word
 - [ ] 14. Longest Common Prefix
 - [ ] 151. Reverse Words in a String
