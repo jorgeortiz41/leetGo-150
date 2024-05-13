@@ -30,6 +30,6 @@ Problems marked with \* means i solved it with help of ChatGPT and still need fu
 - [x] 58. [Length of Last Word](/lenOfLastWord.go)
 - [x] 14. [Longest Common Prefix](/lcp.go)
 - [x] 151. [Reverse Words in a String](/reverseWords.go)
-- [ ] 6. [ZigZag Conversion](/zigZag.go)
+- [x] 6. [ZigZag Conversion](/zigZag.go)
 - [ ] 28. Implement strStr()
 - [ ] 68. Text Justification
