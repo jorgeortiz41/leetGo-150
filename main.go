@@ -24,5 +24,9 @@ func main() {
 	// TestCandy()
 	// TestTrap()			(NOT DONE!!!!)
 	// TestRomanToInt()
-	TestIntToRoman()
+	// TestIntToRoman()
+	// TestlengthOfLastWord()
+	// TestlongestCommonPrefix()
+	// TestreverseWords()
+	TestConvert()
 }
