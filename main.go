@@ -28,5 +28,6 @@ func main() {
 	// TestlengthOfLastWord()
 	// TestlongestCommonPrefix()
 	// TestreverseWords()
-	TestConvert()
+	// TestConvert()
+	TestStrStr()
 }

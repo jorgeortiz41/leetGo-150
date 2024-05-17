@@ -29,10 +29,8 @@ func romanToInt(s string) int {
 		current := romans[letters[i]]
 		if current < prev {
 			result -= current
-			fmt.Println("current < prev, i: ", i, "result: ", result)
 		} else {
 			result += current
-			fmt.Println("else, i: ", i, "result: ", result)
 		}
 		prev = current
 	}

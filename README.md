@@ -4,6 +4,8 @@
 
 Problems marked with \* means i solved it with help of ChatGPT and still need further understanding.
 
+### Arrys/Strings
+
 - [x] 88. [Merge Sorted Array](/mergeSortedArray.go)
 - [x] 27. [Remove Element](/removeElement.go)
 - [x] 26. [Remove Duplicates from Sorted Array](/removeDupes.go)
@@ -31,5 +33,20 @@ Problems marked with \* means i solved it with help of ChatGPT and still need fu
 - [x] 14. [Longest Common Prefix](/lcp.go)
 - [x] 151. [Reverse Words in a String](/reverseWords.go)
 - [x] 6. [ZigZag Conversion](/zigZag.go)
-- [ ] 28. Implement strStr()
+- [x] 28. [Implement strStr()](/strStr.go)
 - [ ] 68. Text Justification
+
+### Two Pointers
+
+- [ ] 125. Valid Palindrome
+- [ ] 392. Is Subsequence
+- [ ] 167. Two Sum II - Input array is sorted
+- [ ] 11. Container With Most Water
+- [ ] 15. 3Sum
+
+### Sliding Window
+
+- [ ] 209. Minimum Size Subarray Sum
+- [ ] 3. Longest Substring Without Repeating Characters
+- [ ] 30. Substring with Concatenation of All Words
+- [ ] 76. Minimum Window Substring

@@ -34,41 +34,41 @@ func Constructor() RandomizedSet {
 	return RandomizedSet{set: make(map[int]int), keys: []int{}, rand: rand.New(rand.NewSource(time.Now().UnixNano()))}
 }
 
-func (this *RandomizedSet) Insert(val int) bool {
-	_, ok := this.set[val]
+func (s *RandomizedSet) Insert(val int) bool {
+	_, ok := s.set[val]
 	if ok {
 		return false
 	}
-	this.keys = append(this.keys, val)
-	this.set[val] = len(this.keys) - 1
+	s.keys = append(s.keys, val)
+	s.set[val] = len(s.keys) - 1
 
 	return true
 }
 
-func (this *RandomizedSet) Remove(val int) bool {
-	_, ok := this.set[val]
+func (s *RandomizedSet) Remove(val int) bool {
+	_, ok := s.set[val]
 	if ok {
-		if this.set[val] == len(this.keys)-1 {
-			this.keys = this.keys[:len(this.keys)-1]
-			delete(this.set, val)
+		if s.set[val] == len(s.keys)-1 {
+			s.keys = s.keys[:len(s.keys)-1]
+			delete(s.set, val)
 			return true
 		}
-		lastVal := this.keys[len(this.keys)-1]
-		this.keys[this.set[val]] = lastVal
-		this.keys = append(this.keys[:len(this.keys)-1], this.keys[len(this.keys)-1:]...)
-		this.set[lastVal] = this.set[val]
-		delete(this.set, val)
+		lastVal := s.keys[len(s.keys)-1]
+		s.keys[s.set[val]] = lastVal
+		s.keys = append(s.keys[:len(s.keys)-1], s.keys[len(s.keys)-1:]...)
+		s.set[lastVal] = s.set[val]
+		delete(s.set, val)
 		return true
 	}
 	return false
 }
 
-func (this *RandomizedSet) GetRandom() int {
-	if len(this.keys) == 0 {
+func (s *RandomizedSet) GetRandom() int {
+	if len(s.keys) == 0 {
 		return 0
 	}
-	randomIdx := this.rand.Intn(len(this.keys))
-	return this.keys[randomIdx]
+	randomIdx := s.rand.Intn(len(s.keys))
+	return s.keys[randomIdx]
 }
 
 func TestRandomizedSet() {
