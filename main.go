@@ -29,5 +29,7 @@ func main() {
 	// TestlongestCommonPrefix()
 	// TestreverseWords()
 	// TestConvert()
-	TestStrStr()
+	// TestStrStr()
+	TestFullJustify()
+	// TestIsPalindrome()
 }

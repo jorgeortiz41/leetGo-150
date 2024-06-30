@@ -38,7 +38,7 @@ Problems marked with \* means i solved it with help of ChatGPT and still need fu
 
 ### Two Pointers
 
-- [ ] 125. Valid Palindrome
+- [x] 125. [Valid Palindrome](/isPalindrome.go)
 - [ ] 392. Is Subsequence
 - [ ] 167. Two Sum II - Input array is sorted
 - [ ] 11. Container With Most Water
